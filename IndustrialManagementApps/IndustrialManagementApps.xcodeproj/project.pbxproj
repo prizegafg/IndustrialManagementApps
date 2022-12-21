@@ -13,6 +13,13 @@
 		CDC8753B2952A67E0002C5A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC875392952A67E0002C5A3 /* Main.storyboard */; };
 		CDC8753D2952A6800002C5A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC8753C2952A6800002C5A3 /* Assets.xcassets */; };
 		CDC875402952A6800002C5A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC8753E2952A6800002C5A3 /* LaunchScreen.storyboard */; };
+		CDC8754C2952AA9C0002C5A3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8754A2952AA9C0002C5A3 /* LoginVC.swift */; };
+		CDC8754D2952AA9C0002C5A3 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDC8754B2952AA9C0002C5A3 /* LoginVC.xib */; };
+		CDC875502952AAC20002C5A3 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8754F2952AAC20002C5A3 /* LoginInteractor.swift */; };
+		CDC875522952AAD10002C5A3 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC875512952AAD10002C5A3 /* LoginPresenter.swift */; };
+		CDC875542952AADD0002C5A3 /* LoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC875532952AADD0002C5A3 /* LoginEntity.swift */; };
+		CDC875562952AAE80002C5A3 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC875552952AAE80002C5A3 /* LoginRouter.swift */; };
+		CDC875582952AAF20002C5A3 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC875572952AAF20002C5A3 /* LoginProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		CDC8753C2952A6800002C5A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDC8753F2952A6800002C5A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDC875412952A6800002C5A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDC8754A2952AA9C0002C5A3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		CDC8754B2952AA9C0002C5A3 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		CDC8754F2952AAC20002C5A3 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		CDC875512952AAD10002C5A3 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		CDC875532952AADD0002C5A3 /* LoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntity.swift; sourceTree = "<group>"; };
+		CDC875552952AAE80002C5A3 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		CDC875572952AAF20002C5A3 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,15 @@
 		CDC875322952A67E0002C5A3 /* IndustrialManagementApps */ = {
 			isa = PBXGroup;
 			children = (
+				CDC875482952AA800002C5A3 /* Modules */,
+				CDC875472952AA6A0002C5A3 /* Assets */,
+			);
+			path = IndustrialManagementApps;
+			sourceTree = "<group>";
+		};
+		CDC875472952AA6A0002C5A3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
 				CDC875332952A67E0002C5A3 /* AppDelegate.swift */,
 				CDC875352952A67E0002C5A3 /* SceneDelegate.swift */,
 				CDC875372952A67E0002C5A3 /* ViewController.swift */,
@@ -64,7 +87,37 @@
 				CDC8753E2952A6800002C5A3 /* LaunchScreen.storyboard */,
 				CDC875412952A6800002C5A3 /* Info.plist */,
 			);
-			path = IndustrialManagementApps;
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		CDC875482952AA800002C5A3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CDC8754E2952AAA00002C5A3 /* Main Menu */,
+				CDC875492952AA870002C5A3 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CDC875492952AA870002C5A3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CDC8754A2952AA9C0002C5A3 /* LoginVC.swift */,
+				CDC8754B2952AA9C0002C5A3 /* LoginVC.xib */,
+				CDC8754F2952AAC20002C5A3 /* LoginInteractor.swift */,
+				CDC875512952AAD10002C5A3 /* LoginPresenter.swift */,
+				CDC875532952AADD0002C5A3 /* LoginEntity.swift */,
+				CDC875552952AAE80002C5A3 /* LoginRouter.swift */,
+				CDC875572952AAF20002C5A3 /* LoginProtocol.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CDC8754E2952AAA00002C5A3 /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Main Menu";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +180,7 @@
 			files = (
 				CDC875402952A6800002C5A3 /* LaunchScreen.storyboard in Resources */,
 				CDC8753D2952A6800002C5A3 /* Assets.xcassets in Resources */,
+				CDC8754D2952AA9C0002C5A3 /* LoginVC.xib in Resources */,
 				CDC8753B2952A67E0002C5A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDC875522952AAD10002C5A3 /* LoginPresenter.swift in Sources */,
 				CDC875382952A67E0002C5A3 /* ViewController.swift in Sources */,
 				CDC875342952A67E0002C5A3 /* AppDelegate.swift in Sources */,
+				CDC875582952AAF20002C5A3 /* LoginProtocol.swift in Sources */,
+				CDC8754C2952AA9C0002C5A3 /* LoginVC.swift in Sources */,
+				CDC875502952AAC20002C5A3 /* LoginInteractor.swift in Sources */,
+				CDC875542952AADD0002C5A3 /* LoginEntity.swift in Sources */,
+				CDC875562952AAE80002C5A3 /* LoginRouter.swift in Sources */,
 				CDC875362952A67E0002C5A3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
